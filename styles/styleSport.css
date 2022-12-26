@@ -1,7 +1,7 @@
 /* подключение шрифта */
 @font-face {
     font-family: "Toyz";
-    src: url("-/FONTS/ofont.ru_Toyz.ttf") format("truetype");
+    src: url("MYSELF/FONTS/ofont.ru_Toyz.ttf") format("truetype");
 
     font-style: normal; 
     font-weight: normal; 
