@@ -1,0 +1,195 @@
+/* подключение шрифта */
+@font-face {
+    font-family: "Toyz";
+    src: url("../fonts/ofont.ru_Toyz.ttf") format("truetype");
+
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+/* обозначение для грида */
+.rules { grid-area: rules; }
+.facts { grid-area: facts; }
+.pointer { grid-area: pointer; }
+h2 { grid-area: H2; }
+button { grid-area: button; }
+p { grid-area: p; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0F8FF;
+
+    margin: 0;
+}
+
+/* определения */
+dfn {
+    font-style: unset;
+    font-weight: 600;
+}
+
+/* стрелочка */
+.pointer > img {
+    width: 70px;
+}
+
+#volleyball, #football, #basketball, #tennis, #karate, #boxing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    align-items: center;
+}
+
+#volleyball {
+    grid-template-areas:
+    'H2 H2'
+    'img img'
+    'rules facts'
+    'button button'
+    'p p'
+    'pointer pointer';
+}
+
+#football {
+    grid-template-areas:
+    'H2 H2'
+    'img rules'
+    'facts img2'
+    'button button'
+    'p p'
+    'pointer pointer';
+}
+
+#basketball, #karate {
+    grid-template-areas:
+    'H2 H2'
+    'rules img'
+    'facts img'
+    'button button'
+    'p p'
+    'pointer pointer';
+}
+
+#tennis {
+    grid-template-areas:
+    'H2 H2'
+    'img facts'
+    'rules rules'
+    'button button'
+    'p p'
+    'pointer pointer';
+}
+
+#boxing {
+    grid-template-areas:
+    'H2 H2'
+    'rules facts'
+    'img button';
+}
+
+/* анимашка */
+#volleyball > img {
+    width: 950px;
+    margin: -90px -120px -150px -120px;
+
+    grid-area: img;
+}
+
+#football > img {
+    width: 400px;
+
+    grid-area: img;
+}
+
+#basketball > img {
+    width: 700px;
+    margin-right: -80px;
+
+    grid-area: img;
+}
+
+#tennis > img {
+    width: 800px;
+    margin: -20px;
+
+    grid-area: img;
+}
+
+#karate > img {
+    width: 300px;
+
+    grid-area: img;
+}
+
+#boxing > img {
+    width: 500px;
+
+    grid-area: img;
+}
+
+#football > .img2 > img {
+    width: 500px;
+    grid-area: img2;
+}
+
+/* правила / факты */
+.rules, .facts {
+    width: 500px;
+
+    margin-top: 10%;
+}
+
+#tennis > .rules {
+    width: unset;
+    margin-top: 4%;
+}
+
+.rules > ul > li, .facts > ul > li {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+/* ПРАВИЛА / ФАКТЫ */
+.rules > h5, .facts > h5 {
+    font-family: "Toyz";
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+
+    font-size: 32px;
+}
+
+/* хочу на ... */
+button {
+    background-color:rgb(153, 233, 255);
+    border-color: rgb(34, 207, 255);
+
+    padding: 15px 35px 15px 35px;
+    height: fit-content;
+    font-family: "Toyz";
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+/* "листай дальше" */
+p {
+    text-transform: uppercase;
+    font-size: large;
+}
+
+/* что такое ... */
+h2 {
+    font-family: "Toyz";
+    font-size: 50px;
+
+    width: 10em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#boxing > h2 {
+    margin-bottom: 1%;
+}
