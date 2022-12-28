@@ -68,3 +68,9 @@ h2 {
     margin-bottom: 10px;
 }
 
+#menu {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+}
