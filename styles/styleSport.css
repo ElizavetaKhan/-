@@ -177,7 +177,7 @@ button {
 }
 
 /* "листай дальше" */
-p {
+body > section > p {
     text-transform: uppercase;
     font-size: large;
 }
