@@ -15,7 +15,7 @@ body {
 }
 
 h2 {
-    font-family: "Toyz";
+    font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
 
     text-align: center;
@@ -49,7 +49,7 @@ h2 {
 
 /* заголовок новости */
 .news > section > span > h3 {
-    font-family: "Toyz";
+    font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 35px;
 
     margin-bottom: 20px;
