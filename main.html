@@ -26,56 +26,93 @@
 
 <body>
     <div id="header"></div>
+    <section class="hello">
+        <img src="images/пис.gif" alt="персонаж приветствует тебя">
+        <div>
+            <img src="images/персонаж приветствует.png" alt="Привет! Меня зовут Саня и я художник. А кем хочешь быть ты?">
+        </div>
+    </section>
+
+    <ul>
+        <li>выбирай:)</li>
+        <li class="toyz">мне нравится</li>
+        <li><img src="images/стрелка.png" alt="стрелочка-указатель на меню" width="25px"></li>
+    </ul>
+
     <div id="menu"></div>
 
-    <h2>Новости</h2>
+    <ul>
+        <li>глянь, что нового в твоем городе</li>
+        <li><img src="images/стрелочка.png" alt="стрелка-листатель вниз" width="70px"></li>
+        <li><h2>Новости</h2></li>
+    </ul>
 
-    <section class="news">
-        <section>
-            <span>
-                <img src="images/галочка.png" alt="галочка, маркер списка">
-                <h3>Актер?</h3>
-            </span>
+    <div class="news_page">
+        <section class="news">
+            <section>
+                <span>
+                    <img src="images/галочка.png" alt="галочка, маркер списка">
+                    <h3>Актер?</h3>
+                </span>
 
-            <h5>или хочешь им стать?</h5> 
-            <p>пробы в твоем городе</p>
+                <h5>или хочешь им стать?</h5> 
+                <p>пробы в твоем городе</p>
+
+                <button>подробнее</button>
+            </section>
+
+            <img src="images/актер.png" alt="персонаж-актер" width= "270px">
         </section>
 
-        <img src="images/актер.png" alt="персонаж-актер">
-    </section>
+        <section class="news right">
+            <section>
+                <span>
+                    <img src="images/галочка.png" alt="галочка, маркер списка">
+                    <h3>Волейбол!</h3>
+                </span>
 
-    <section class="news">
+                <h5>открытые соревнования</h5> 
+                <p>сходи — присмотрись, поболей</p>
 
-        <img src="images/актер.png" alt="персонаж-актер">
-        
-        <section>
-            <span>
-                <img src="images/галочка.png" alt="галочка, маркер списка">
-                <h3>Актер?</h3>
-            </span>
+                <button>подробнее</button>
+            </section>
 
-            <h5>или хочешь им стать?</h5> 
-            <p>пробы в твоем городе</p>
+            <img src="images/волейбол.png" alt="персонаж-волейболист" width= "200px">
         </section>
-    </section>
+
+        <section class="news">
+            <section>
+                <span>
+                    <img src="images/галочка.png" alt="галочка, маркер списка">
+                    <h3>Футбол!</h3>
+                </span>
+
+                <h5>набор детей в спортшколу</h5> 
+                <p>8-9 лет, м. Приморская</p>
+
+                <button>подробнее</button>
+            </section>
+
+            <img src="images/футбол.png" alt="персонаж-футболист" width= "300px">
+        </section>
+
+        <section class="news right">
+            <section>
+                <span>
+                    <img src="images/галочка.png" alt="галочка, маркер списка">
+                    <h3>Поучаствуй в клипе!</h3>
+                </span>
+
+                <p>В Москве проходит набор детей для массовки в клип Дани Милохина</p>
+
+                <button>подробнее</button>
+            </section>
+        </section>
+
+        <button onclick="document.location='main.html#menu'"> я готов выбрать секцию/кружок </button>
+    </div>
     
     <div id="footer"></div>
-    
-    <script>
-        var h_hght = 100; // высота шапки
-        var h_mrg = 10;     // отступ когда шапка уже не видна
-        $(function(){
-         $(window).scroll(function(){
-            var top = $(this).scrollTop();
-            var elem = $('#menu');
-            if (top+h_mrg < h_hght) {
-             elem.css('top', (h_hght-top));
-            } else {
-             elem.css('top', h_mrg);
-            }
-          });
-        });
-      </script>
     
 </body>
 </html>
