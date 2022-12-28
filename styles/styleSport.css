@@ -193,3 +193,10 @@ h2 {
 #boxing > h2 {
     margin-bottom: 1%;
 }
+
+#menu {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+}
