@@ -14,22 +14,42 @@ body {
     background-color: #F0F8FF;
 }
 
-h2 {
+/* новости */
+body > ul > li > h2 {
     font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
+    font-size: 53px;
+    letter-spacing: 8px;
 
     text-align: center;
 }
 
 .news {
-    padding: 2% 6% 0% 6%;
+    display: flex;
+    margin: 0em 0em 4em 7em;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-color:#d6ecffab;
+    width: 35em;
+    height: 15em;
+    border-radius: 40px;
+    padding-left: 2em;
 }
 
-.news > img {
-    width: 350px;
+/* смена цвета новости по наведению */
+.news:hover 
+{
+    background-color: #cae6ff;
+    border-radius: 40px;
+}
+
+/* для новостей справа */
+.right {
+    align-self: flex-end;
+    margin-right: 7em;
+}
+
+/* текстовая инфа новости */
+.news > section {
+    margin-right: 1.5em;
 }
 
 /* галочка */
@@ -37,22 +57,23 @@ h2 {
     width: 30px;
     height: 35px;
 
-    margin-right: 12px;
+    margin-right: 1.5em;
 }
 
+/* галочка и заголовок новости*/
 .news > section > span {
     display: flex;
 
     align-items: center;
-    justify-content: center;
 }
 
 /* заголовок новости */
 .news > section > span > h3 {
     font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 35px;
+    letter-spacing: 8px;
 
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .news > section > p {
@@ -63,14 +84,98 @@ h2 {
     text-transform: uppercase;
     margin-top: 0px;
 
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+/* кнопка подробнее */
+.news > section > button {
+    margin: 1em 0em 1em 0em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+
+    letter-spacing: 3px;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color:rgb(153, 233, 255);
+    border-color: rgb(34, 207, 255);
+}
+
+.hello {
+    margin-top: 3%;
+
+    display: grid;
+    grid-template-areas: 
+    'cloud cloud'
+    'img .';
+
+    justify-items: center;
+}
+
+/* привет */
+.hello > img {
+    width: 700px;
+    grid-area: img;
+
+    margin-top: 1em;
+    margin-bottom: -120px;
+}
+
+/* приветственные слова */
+.hello > div > img {
+    width: 400px;
+    position: absolute;
+    grid-area: cloud;
+    z-index: -1;
+
+    margin-left: 50px;
+}
+
+body > ul {
+    list-style: none;
+
+    text-align: center;
+}
+
+body > ul > li {
     font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* галочки */
+body > ul > li > img {
+    margin: 5px;
+}
+
+/* подключение шрифта в список */
+.toyz {
+    margin-top: 8px;
+
+    font-size: 40px;
+    font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* я готов выбрать */
+.news_page > button {
+    font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+
+    background-color:rgb(153, 233, 255);
+    border-color: rgb(34, 207, 255);
+    align-self: center;
+    margin: 2em;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+/* все новости */
+.news_page {
+    display: flex;
+    flex-direction: column;
 }
 
 #menu {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
+    width: 99%;
     text-align: center;
+
+    margin: -1em 0em 6em 0em;
 }
