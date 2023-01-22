@@ -24,7 +24,7 @@ body > ul > li > h2 {
 }
 
 .news {
-    display: flex;
+    display: inherit;
     margin: 0em 0em 4em 7em;
 
     background-color:#d6ecffab;
@@ -53,7 +53,7 @@ body > ul > li > h2 {
 }
 
 /* галочка */
-.news > section > span > img {
+.news > section > span > img, .news > span > img {
     width: 30px;
     height: 35px;
 
@@ -61,14 +61,14 @@ body > ul > li > h2 {
 }
 
 /* галочка и заголовок новости*/
-.news > section > span {
+.news > section > span, .news > span {
     display: flex;
 
     align-items: center;
 }
 
 /* заголовок новости */
-.news > section > span > h3 {
+.news > section > span > h3, .news > span > h3 {
     font-family: "Toyz", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 35px;
     letter-spacing: 8px;
@@ -76,7 +76,7 @@ body > ul > li > h2 {
     margin-bottom: 28px;
 }
 
-.news > section > p {
+.news > section > p, .news > p {
     margin-top: 0%;
 }
 
@@ -89,15 +89,18 @@ body > ul > li > h2 {
 }
 
 /* кнопка подробнее */
-.news > section > button {
+.news > section > button, .news > button {
     margin: 1em 0em 1em 0em;
-    padding: 0.5em 1.5em 0.5em 1.5em;
+    padding: 0.8em 1.5em 0.8em 1.5em;
 
     letter-spacing: 3px;
     font-family: inherit;
     border-radius: 10px;
-    background-color:rgb(153, 233, 255);
-    border-color: rgb(34, 207, 255);
+    background-color:#a5bdff64;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    width: min-content;
 }
 
 .hello {
@@ -178,4 +181,9 @@ body > ul > li > img {
     text-align: center;
 
     margin: -1em 0em 6em 0em;
+}
+
+.special {
+    flex-direction: column;
+    width: 32em;
 }
