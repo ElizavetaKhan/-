@@ -78,6 +78,7 @@ body > ul > li > h2 {
 
 .news > section > p, .news > p {
     margin-top: 0%;
+    padding-right: 10%;
 }
 
 .news > section > h5 {
