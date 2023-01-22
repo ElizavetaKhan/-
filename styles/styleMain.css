@@ -90,7 +90,6 @@ body > ul > li > h2 {
 
 /* кнопка подробнее */
 .news > section > button, .news > button {
-    margin: 1em 0em 1em 0em;
     padding: 0.8em 1.5em 0.8em 1.5em;
 
     letter-spacing: 3px;
