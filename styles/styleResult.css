@@ -24,6 +24,7 @@ select {
     border-radius: 10px;
     outline: none;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .tell {
