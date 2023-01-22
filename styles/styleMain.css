@@ -177,10 +177,9 @@ body > ul > li > img {
 }
 
 #menu {
-    width: 99%;
-    text-align: center;
+    width: 97%;
 
-    margin: -1em 0em 5em 0em;
+    margin: -1em auto 5em auto;
 }
 
 .special {
