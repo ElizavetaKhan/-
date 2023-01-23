@@ -199,7 +199,7 @@ h2 {
 
 #menu {
     position: fixed;
-    width: 92%;
+    width: 96%;
     z-index: 999;
-    margin: 0 auto;
+    margin-left: 1%;
 }
